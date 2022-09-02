@@ -1,0 +1,155 @@
+local player = game.Players.LocalPlayer
+
+if player.Name == "iplaytpsok" then
+    else
+        player:Kick("Not whitelisted")
+end 
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("scp ro soccer script", "Ocean")
+local Tab = Window:NewTab("info about this script")
+local Section = Tab:NewSection("made by scp but pluto helped me alot ")
+local Section = Tab:NewSection("this script will get constants updates like speed etc ")
+local Section = Tab:NewSection("the reach works for many ro soccer games ")
+
+
+
+
+local Tab = Window:NewTab("Reach")
+local Section = Tab:NewSection("thisscript oppp")
+Section:NewSlider("Reach With Slider", "pro", 25, 0, function(s) -- 100 (MaxValue) | 0 (MinValue)
+    _G.BallName = "TPS"
+_G.Magnitude = s
+_G.Enabled = true
+
+
+-- DONT TOUCH ANYTHING BELOW THIS
+
+_G.Path = nil
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+
+local leg = game.Players.LocalPlayer.Character["Right Leg"]
+local left = game.Players.LocalPlayer.Character["Left Arm"]
+local arm = game.Players.LocalPlayer.Character["Right Arm"]
+local torso = game.Players.LocalPlayer.Character.Torso
+
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+mouse.KeyDown:connect(function()
+                             if _G.Path == nil then
+    if _G.Enabled == true then
+for i, balls in pairs(game.Workspace:GetDescendants()) do
+                        if balls.Name == _G.BallName then
+                                _G.Path = balls.Parent
+                        if (balls.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls, 0)
+firetouchinterest(torso, balls, 0)
+firetouchinterest(left, balls, 0)
+firetouchinterest(leg, balls, 0)
+firetouchinterest(head, balls, 0)
+wait()
+firetouchinterest(arm, balls, 1)
+firetouchinterest(torso, balls, 1)
+firetouchinterest(left, balls, 1)
+firetouchinterest(leg, balls, 1)
+end
+end
+end
+end
+elseif _G.Path ~= nil then
+        if _G.Enabled == true then
+    for i, balls2 in pairs(_G.Path:GetChildren()) do
+                          if balls2.Name == _G.BallName then
+                                              if (balls2.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls2, 0)
+firetouchinterest(torso, balls2, 0)
+firetouchinterest(left, balls2, 0)
+firetouchinterest(leg, balls2, 0)
+wait()
+firetouchinterest(arm, balls2, 1)
+firetouchinterest(torso, balls2, 1)
+firetouchinterest(left, balls2, 1)
+firetouchinterest(leg, balls2, 1)
+               end
+            end
+        end
+        end
+end
+end)
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+            mouse.Button1Down:Connect(function()
+                             if _G.Path == nil then
+    if _G.Enabled == true then
+for i, balls in pairs(game.Workspace:GetDescendants()) do
+                        if balls.Name == _G.BallName then
+                                _G.Path = balls.Parent
+                        if (balls.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls, 0)
+firetouchinterest(torso, balls, 0)
+firetouchinterest(left, balls, 0)
+firetouchinterest(leg, balls, 0)
+wait()
+firetouchinterest(arm, balls, 1)
+firetouchinterest(torso, balls, 1)
+firetouchinterest(left, balls, 1)
+firetouchinterest(leg, balls, 1)
+end
+end
+end
+end
+elseif _G.Path ~= nil then
+        if _G.Enabled == true then
+    for i, balls2 in pairs(_G.Path:GetChildren()) do
+                          if balls2.Name == _G.BallName then
+                                              if (balls2.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= _G.Magnitude then
+firetouchinterest(arm, balls2, 0)
+firetouchinterest(torso, balls2, 0)
+firetouchinterest(left, balls2, 0)
+firetouchinterest(leg, balls2, 0)
+wait()
+firetouchinterest(arm, balls2, 1)
+firetouchinterest(torso, balls2, 1)
+firetouchinterest(left, balls2, 1)
+firetouchinterest(leg, balls2, 1)
+               end
+            end
+        end
+        end
+end
+end)
+
+
+setsimulationradius(math.huge, math.huge)
+end)
+
+local Tab = Window:NewTab("react ")
+local Section = Tab:NewSection("uwu")
+Section:NewButton("react", "this will give u better react for tps street soccer only", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AvexcitalScripts/RSU-GUI/main/TPS_BetterReact", true))()
+end)
+
+
+
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.p, function()
+	Library:ToggleUI()
+end)
+
+
+
+-- speed 
+
+
+Section:NewSlider("SliderText", "SliderInfo", 500, 0, function(s)
+ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+
+
+
