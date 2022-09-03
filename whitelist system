@@ -6,7 +6,9 @@ local player = game.Players.LocalPlayer
     else
             if player.Name == "yorealscp" then
     else
-        player:Kick("Not whitelisted")
+                if player.Name == "yorealscp" then
+    else
+        player:Kick("are u serius righttt neoowwwww")
 end
 end
 end
