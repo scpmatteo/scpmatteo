@@ -1,0 +1,12 @@
+local player = game.Players.LocalPlayer
+
+    if player.Name == "HauntedPlutoo" then
+    else
+        if player.Name == "iplaytpsok" then
+    else
+            if player.Name == "yorealsp" then
+    else
+        player:Kick("are u serius righttt neoowwwww")
+end
+end
+end
