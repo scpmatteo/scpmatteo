@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 
-if player.Name == "yorealsc" then
+if player.Name == "" then
     else
     if player.Name == "HauntedPlutoo" then
     else
