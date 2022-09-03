@@ -4,6 +4,9 @@ local player = game.Players.LocalPlayer
     else
         if player.Name == "iplaytpsok" then
     else
+            if player.Name == "yorealscp" then
+    else
         player:Kick("Not whitelisted")
+end
 end
 end
