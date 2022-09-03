@@ -1,12 +1,9 @@
 local player = game.Players.LocalPlayer
 
-if player.Name == "" then
-    else
     if player.Name == "HauntedPlutoo" then
     else
         if player.Name == "iplaytpsok" then
     else
         player:Kick("Not whitelisted")
-end
 end
 end
