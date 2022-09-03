@@ -4,7 +4,7 @@ local player = game.Players.LocalPlayer
     else
         if player.Name == "iplaytpsok" then
     else
-            if player.Name == "yorealsp" then
+            if player.Name == "yorealscp" then
     else
                 if player.Name == "Must_763" then
     else
