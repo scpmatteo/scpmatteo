@@ -6,7 +6,7 @@ local player = game.Players.LocalPlayer
     else
             if player.Name == "yorealscp" then
     else
-                if player.Name == "yorealscp" then
+                if player.Name == "tammert83" then
     else
         player:Kick("are u serius righttt neoowwwww")
 end
