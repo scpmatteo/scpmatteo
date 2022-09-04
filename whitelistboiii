@@ -8,7 +8,10 @@ local player = game.Players.LocalPlayer
     else
                 if player.Name == "Must_763" then
     else
+                    if player.Name == "tammert83" then
+    else
         player:Kick("are u serius righttt neoowwwww")
+end
 end
 end
 end
